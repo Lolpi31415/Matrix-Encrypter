@@ -7,11 +7,11 @@ function processinfo() {
 
     if (!cleanText) {
         output.value = "";
-        gridInfo.textContent = "Enter letters to encrypt.";
+        gridInfo.textContent = "Enter letters to encrypt.";  //prompt user if no text in input
         gridContainer.innerHTML = "";
         return;
     }
-
+//gets how big the matrix should be
     const n = Math.ceil(Math.sqrt(cleanText.length));
     output.value = matrixEncrypt(cleanText, n);
     gridInfo.textContent = `Encryption matrix: ${n} x ${n}. Spaces and punctuation are ignored; X fills empty cells.`;
