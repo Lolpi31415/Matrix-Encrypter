@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<!--Information and page title-->
+    <h2>Encrypter</h2>
+
+
+    <h4>This encrypter uses a matrix as its encryption method. </h4>
+<!--Actual encryption area-->
+    <div class="encrypter">
+        <textarea id="input" placeholder="Enter text to encrypt" rows="4" cols="50"></textarea>
+        <button id="button">Encrypt</button>        <div id="outputText">
+            <textarea id="output" readonly rows="4" cols="50"></textarea>
+        </div>
+
+    </div>
+    <!-- Display area for grid info -->
+    <p id="gridInfo" style="font-weight: bold; color: #333;"></p>
+
+    <!-- Visual Grid Container, will try to do-->
+    <div id="matrixGridContainer"></div><br>
+</body>
+</html>
+

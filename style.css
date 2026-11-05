@@ -1,0 +1,37 @@
+h2 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+body {
+    background-color: darkgrey;
+}
+
+.cypher {
+    align-items: center;
+    text-align: center;
+}
+
+#matrixGridContainer table {
+    border-collapse: collapse;
+    margin: 15px auto;
+    font-family: monospace;
+}
+/*makes the grid not look like crap */
+#matrixGridContainer td {
+    border: 2px solid #333;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f4f4f4;
+}
+
+.padding-cell {
+    background-color: #ffe6e6 !important;
+    color: #d9534f;
+}
