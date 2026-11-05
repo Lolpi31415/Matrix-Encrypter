@@ -26,6 +26,15 @@
 <!--Actual encryption area-->
     <div class="encrypter">
         <textarea id="input" placeholder="Enter text to encrypt" rows="4" cols="50"></textarea>
+        <label for="traversalMode">Select what method you would like to use:</label>
+        <!--Allow user to select what type they want so its more secure-->
+        <select id="traversalMode">
+            <option value="columns">Columns (current)</option>
+            <option value="diagonal">Diagonal zigzag</option>
+            <option value="spiral">Clockwise spiral</option>
+            <option value="shifted-columns">Columns shifted left by one</option>
+        </select>
+       <div class="notif"> <p>*Not recomended to use the spiral if there is a lot of empty boxes filled with X's</p></div>
         <button id="button">Encrypt</button>        <div id="outputText">
             <textarea id="output" readonly rows="4" cols="50"></textarea>
         </div>
@@ -40,4 +49,3 @@
 </div>
 </body>
 </html>
-

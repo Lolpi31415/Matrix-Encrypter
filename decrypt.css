@@ -2,7 +2,8 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #333;       /* Dark background */
+    margin: 8px;
+    background-color: #7a7a21;       /* manuel cover bg */
     color: white;                 /* White text color */
     display: flex;                /* Aligns logo and links side-by-side */
     justify-content: space-between; /* Pushes logo to left, links to right */
@@ -29,4 +30,57 @@
 /* Add a hover effect to the links */
 .nav-links a:hover {
     color: #00bcd4;               /* Turns bright blue on hover */
+}
+
+
+body {
+    position: relative;
+    isolation: isolate;
+    background-color: #000;
+}
+
+body::before,
+body::after {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    content: "";
+    pointer-events: none;
+}
+
+body::before {
+    background-image:
+        radial-gradient(1px 1px at 25px 35px, #fff 99%, transparent),
+        radial-gradient(1px 1px at 115px 145px, #fff 99%, transparent),
+        radial-gradient(1px 1px at 190px 75px, #fff 99%, transparent);
+    background-size: 250px 250px;
+    animation: drift-small-stars 70s linear infinite;
+}
+
+body::after {
+    opacity: 0.65;
+    background-image:
+        radial-gradient(2px 2px at 70px 95px, #fff 99%, transparent),
+        radial-gradient(1px 1px at 230px 215px, #fff 99%, transparent);
+    background-size: 350px 350px;
+    animation: drift-large-stars 120s linear infinite;
+}
+
+@keyframes drift-small-stars {
+    to {
+        background-position: 250px 250px;
+    }
+}
+
+@keyframes drift-large-stars {
+    to {
+        background-position: -350px 350px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body::before,
+    body::after {
+        animation: none;
+    }
 }
