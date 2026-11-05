@@ -11,8 +11,29 @@ h2 {
 }
 
 body {
-    background-color: darkgrey;
+  margin: 0;
+  height: 100vh;
+  /* 1. Define a multi-color gradient */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  /* 2. Blow up the background size so it can shift out of view */
+  background-size: 400% 400%;
+  /* 3. Bind the keyframes, set duration, timing, and loop infinitely */
+  animation: gradientMover 15s ease infinite;
 }
+
+/* 4. Define how the background shifts positions */
+@keyframes gradientMover {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 .cypher {
     align-items: center;
@@ -80,6 +101,12 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    width: min(90%, 680px);
+    margin: 5vh auto;
+    padding: 2rem;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
 }
