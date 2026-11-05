@@ -1,0 +1,32 @@
+.title-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #333;       /* Dark background */
+    color: white;                 /* White text color */
+    display: flex;                /* Aligns logo and links side-by-side */
+    justify-content: space-between; /* Pushes logo to left, links to right */
+    align-items: center;          /* Centers items vertically */
+    padding: 15px 30px;           /* Adds space inside the bar */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow drop */
+}
+
+/* Style the logo text */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Style the links container */
+.nav-links a {
+    color: white;
+    text-decoration: none;        /* Removes underline */
+    margin-left: 20px;            /* Spaces links out */
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* Add a hover effect to the links */
+.nav-links a:hover {
+    color: #00bcd4;               /* Turns bright blue on hover */
+}
