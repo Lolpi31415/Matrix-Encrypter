@@ -84,3 +84,20 @@ body::after {
         animation: none;
     }
 }
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(90%, 680px);
+    margin: 5vh auto;
+    padding: 2rem;
+    box-sizing: border-box;
+    background: rgba(158, 158, 158, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+h4 {
+    text-align: center;
+}
