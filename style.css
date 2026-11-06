@@ -1,4 +1,4 @@
-h2 {
+body.encrypter-page h2 {
     text-align: center;
     background-color: black;
     color: white;
@@ -63,18 +63,18 @@ body::after {
 }
 
 
-.cypher {
+body.encrypter-page .cypher {
     align-items: center;
     text-align: center;
 }
 
-#matrixGridContainer table {
+body.encrypter-page #matrixGridContainer table {
     border-collapse: collapse;
     margin: 15px auto;
     font-family: monospace;
 }
 /*makes the grid not look like crap */
-#matrixGridContainer td {
+body.encrypter-page #matrixGridContainer td {
     border: 2px solid #333;
     width: 35px;
     height: 35px;
@@ -84,12 +84,12 @@ body::after {
     background-color: #f4f4f4;
 }
 
-.padding-cell {
+body.encrypter-page .padding-cell {
     background-color: #ffe6e6 !important;
     color: #d9534f;
 }
 
-button {
+body.encrypter-page button {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
@@ -101,7 +101,7 @@ button {
     cursor: pointer;
 }
 
-textarea {
+body.encrypter-page textarea {
     display: block;
     margin: 20px auto;
     width: 80%;
@@ -112,7 +112,7 @@ textarea {
     border-radius: 5px;
 }
 
-h4 {
+body.encrypter-page h4 {
     text-align: center;
     background-color: black;
     color: white;
@@ -133,10 +133,18 @@ h4 {
     margin: 5vh auto;
     padding: 2rem;
     box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(158, 158, 158, 0.92);
     border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 8px;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+body.encrypter-page .main {
+    background: rgba(148, 147, 147, 0.92);
+}
+
+body:not(.encrypter-page) h4 {
+    text-align: center;
 }
 
 
@@ -174,12 +182,12 @@ h4 {
     color: #00bcd4;               /* Turns bright blue on hover */
 }
 
-.notif {
+body.encrypter-page .notif {
     text-align: center;
     
 }
 
-.notif p {
+body.encrypter-page .notif p {
     color: red;
 }
 

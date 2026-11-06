@@ -4,17 +4,17 @@ function getinfo(){
     const cleanText = cyphertext.replace(/[^a-zA-Z]/g, "").toUpperCase();
 
     if (!cleanText) {
-        output.textContent = "";
+        output.value = "";
         return;
     }
 
     const n = Math.sqrt(cleanText.length);
     if (!Number.isInteger(n)) {
-        output.textContent = "Ciphertext length must form a square matrix.";
+        output.value = "Ciphertext length must form a square matrix.";
         return;
     }
 
-    output.textContent = `Decrypt: ${decrypt(cleanText, n)}\nSpiral decrypt: ${decryptSpiral(cleanText, n)}`;
+    output.value = `Decrypt: ${decrypt(cleanText, n)}\nSpiral decrypt: ${decryptSpiral(cleanText, n)}`;
 }
 
 function decrypt(cleanText, n){
@@ -32,7 +32,6 @@ function decrypt(cleanText, n){
     }
     return plaintext;
 }
-
 
 function decryptSpiral(cleanText, n) {
     const grid = Array(n).fill("").map(() => Array(n).fill(""));
