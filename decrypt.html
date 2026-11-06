@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="decrypt.css">
+    <link rel="stylesheet" href="style.css">
     <script src="decrypt.js" defer></script>
 </head>
 <body>
@@ -15,6 +15,18 @@
         <a href="index.html">Encrypter</a>
         <a href="decrypt.html">Decrypter</a>
     </nav>
+
+
 </header>
+
+<div class="main">
+    <h2>TM 32-220 decrypter</h2>
+    <h4>A decrypter for the TM 32-220 encryption algorithms, will not give a set response but rather a range of possible decryptions and it is up to you to determine which one is the most correct. </h4>
+    <textarea id="input" placeholder="Enter text to decrypt, MUST BE ABLE TO FILL A SQUARE MATRIX" rows="4" cols="50"></textarea>
+   
+    <button id="button">Decrypt</button>
+    <div id="outputText">
+        <p id="output"></p>
+</div>
 </body>
 </html>

@@ -145,7 +145,7 @@ h4 {
     top: 0;
     z-index: 1000;
     margin: 8px;
-    background-color: #7a7a21;       /* manuel cover bg */
+    background-color: #4b93c1;       /* manuel cover bg */
     color: white;                 /* White text color */
     display: flex;                /* Aligns logo and links side-by-side */
     justify-content: space-between; /* Pushes logo to left, links to right */
@@ -181,4 +181,42 @@ h4 {
 
 .notif p {
     color: red;
+}
+
+#output {
+    white-space: pre-line;
+}
+
+.main a{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #64bab2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+
+
+}
+
+.main a:hover {
+    background-color: #4a9a91;
+}
+
+
+.outputText {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #3b3c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
 }
